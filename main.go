@@ -13,6 +13,6 @@ func main() {
 
 	result := add(numberOne, numberTwo)
 
-	fmt.Println("Result: ", result)
+	fmt.Println("The result: ", result)
 
 }
