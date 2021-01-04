@@ -2,15 +2,6 @@
 
 This text will be needed to do a first commit v2 :D
 
-Artem:
-Ein Paar CI Bsp aus dem GitLab CI Umfeld:
-- https://git.t-seclab.telekom.de/seclab/chef/-/blob/master/.gitlab-ci.yml
-- das sieht dann so aus: https://git.t-seclab.telekom.de/seclab/chef/-/pipelines/19689
-- Und hier im MR sieht Du die Tests (die grünen Häckchen): https://git.t-seclab.telekom.de/seclab/chef/-/merge_requests/533
-- https://git.t-seclab.telekom.de/seclab/auri/-/blob/master/.gitlab-ci.yml
-- Ergebnis davon: https://git.t-seclab.telekom.de/seclab/auri/-/pipelines/19829
-- und hier im MR: https://git.t-seclab.telekom.de/seclab/auri/-/merge_requests/130
-
 GitHub Actions: https://github.com/features/actions
 Für den POC reicht es wenn Du eine zweistufige Pipeline damit baust, im ersten Schritt soll so etwas ausgeführt werden:
 - echo "First step" && echo "Result from step1" > testfile
@@ -71,3 +62,25 @@ Was ist eine Pipeline?
 
 GitHub Actions - Now with built-in CI/CD! Live from GitHub HQ:
 https://www.youtube.com/watch?v=E1OunoCyuhY&feature=emb_rel_end
+
+Das sieht sehr gut aus! Der nächste Schritt wäre zu schauen: 
+wie können wir ein RPM in der CI bauen und vor allem, wo und wie können wir es hosten? 
+Ist z.B. ein Upload Richtung Corp denkbar? (https://fedoraproject.org/wiki/Category:Copr)
+https://copr.fedorainfracloud.org
+
+Was ist Copr? -> Community projects
+- ein Fedora Projekt, welches third-party-Package Repositories managed und beim building hilft
+- Copr is an easy-to-use automatic build system providing a package repository as its output. 
+https://github.com/fedora-copr/copr
+-> ist ein Service, der ein Open-Source Projekt baut und ein eigenes RPM repositories erstellt
+
+
+Was ist das Fedora Projekt?
+- Eine Online-Community, möchte das Leben der Menschen mit kostenloser Software verbessern
+- es soll ein Betriebssystem für eine möglichst vielfältige Zielgruppe geschaffen werden
+
+A. wird in ein RPM, deswegen muss das gehandelt werden
+
+Auto-rebuild bei Packages:
+Unter Webhooks werden Links eingetragen, an die Benachrichtigungen gehen sollen.
+https://github.com/Robs-Organisation/RobsTestRepo/settings/hooks
