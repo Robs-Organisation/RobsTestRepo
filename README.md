@@ -84,3 +84,5 @@ A. wird in ein RPM, deswegen muss das gehandelt werden
 Auto-rebuild bei Packages:
 Unter Webhooks werden Links eingetragen, an die Benachrichtigungen gehen sollen.
 https://github.com/Robs-Organisation/RobsTestRepo/settings/hooks
+
+Test for auto
