@@ -3,7 +3,7 @@ development:
   dialect: postgres
   database: calcDB
   user: robin
-  password: Lillyba1
+  password: 12345
   host: 127.0.0.1
   pool: 5
 
