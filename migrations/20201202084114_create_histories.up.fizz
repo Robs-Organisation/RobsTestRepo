@@ -1,0 +1,13 @@
+create_table("histories") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("result", "float")
+	t.Column("task", "string")
+	t.Column("by_user", "uuid")
+	t.Timestamps()
+}
+
+add_foreign_key("histories", "by_user", {"users": ["id"]}, {
+    "name": "fk_user",
+    "on_delete": "cascade",
+    "on_update": "cascade",
+})
