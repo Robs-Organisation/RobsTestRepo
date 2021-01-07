@@ -1,0 +1,22 @@
+mode: set
+buffalo_calc/models/histroy.go:23.34,26.2 2 0
+buffalo_calc/models/histroy.go:32.36,35.2 2 0
+buffalo_calc/models/histroy.go:39.74,41.2 1 0
+buffalo_calc/models/histroy.go:45.80,47.2 1 0
+buffalo_calc/models/histroy.go:51.80,53.2 1 0
+buffalo_calc/models/models.go:14.13,18.16 4 1
+buffalo_calc/models/models.go:21.2,21.34 1 1
+buffalo_calc/models/models.go:18.16,20.3 1 0
+buffalo_calc/models/user.go:30.69,33.16 3 0
+buffalo_calc/models/user.go:36.2,37.32 2 0
+buffalo_calc/models/user.go:33.16,35.3 1 0
+buffalo_calc/models/user.go:41.31,44.2 2 0
+buffalo_calc/models/user.go:50.32,53.2 2 0
+buffalo_calc/models/user.go:57.71,67.20 2 0
+buffalo_calc/models/user.go:67.20,70.25 3 0
+buffalo_calc/models/user.go:73.5,74.19 2 0
+buffalo_calc/models/user.go:77.5,77.14 1 0
+buffalo_calc/models/user.go:70.25,72.6 1 0
+buffalo_calc/models/user.go:74.19,76.6 1 0
+buffalo_calc/models/user.go:85.77,91.2 2 0
+buffalo_calc/models/user.go:95.77,97.2 1 0

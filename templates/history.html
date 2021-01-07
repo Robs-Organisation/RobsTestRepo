@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 style="text-align: center; background-color: #E20074; color: white; padding-bottom: 20px; margin-top: 20px;padding-block: 20px;">
+            Welcome to Robs calculator - History
+        </h1> 
+    </div>
+</div>
+
+<div class="container-fluid">
+    <%= if(histories) { %>
+        <table style="width: auto;" class="table">
+            <tr>
+                <th>Math Operation</th>
+                <th>Result</th>
+            </tr>
+        <%= for (history) in histories { %>
+                <tr>
+                    <td> <%= history.Task %> </td>
+                    <td> <%= history.Result %> </td>
+                </tr>
+        <% } %>
+        </table>
+
+</div>

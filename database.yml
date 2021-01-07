@@ -1,0 +1,19 @@
+---
+development:
+  dialect: postgres
+  database: calcDB
+  user: robin
+  password: Lillyba1
+  host: 127.0.0.1
+  pool: 5
+
+test:
+  dialect: postgres
+  database: calcdb_test
+  user: postgres
+  password: Lillyba1
+  host: 127.0.0.1
+  pool: 5
+
+production:
+  url: {{envOr "DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/buffalo_calc_production?sslmode=disable"}}
