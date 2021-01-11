@@ -24,9 +24,6 @@ jobs:
     - name: Test
       run: go test -v ./...
       
-    - name: Set up Buffalo
-      uses: actions/setup
-      
     - name: Buffalo
       run: buffalo buid
       
