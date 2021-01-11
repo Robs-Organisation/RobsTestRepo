@@ -24,5 +24,11 @@ jobs:
     - name: Test
       run: go test -v ./...
       
+    - name: Set up Buffalo
+      uses: actions/setup
+      
     - name: Buffalo
-      run: buffalo build
+      run: buffalo buid
+      
+    - name: test
+      run: mul("2*2")
