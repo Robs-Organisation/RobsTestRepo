@@ -37,5 +37,8 @@ jobs:
     - name: check GOPATH v2
       run: go env
 
-    - name: what is in GOPATH
-      run: cd /home/runner/go; ls
+    - name: what is in GOPATH bin
+      run: cd /home/runner/go/bin; ls
+
+    - name: what is in GOPATH pkg
+      run: cd /home/runner/go/bin; ls
