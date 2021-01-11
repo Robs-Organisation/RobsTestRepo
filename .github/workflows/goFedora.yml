@@ -30,3 +30,9 @@ jobs:
       
     - name: check for go
       run: go build -v ./...
+      
+    - name: check GOPATH
+      run: echo $PATH
+    
+    - name: checj GOPATH v2
+      run: go env
