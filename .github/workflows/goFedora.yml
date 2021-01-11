@@ -26,6 +26,7 @@ jobs:
       
     - name: check for buffalo
       run: buffalo build -v ./...
+      continue-on-error: true
       
     - name: check for go
       run: go build -v ./...
