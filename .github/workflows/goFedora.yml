@@ -21,5 +21,8 @@ jobs:
     - name: Build
       run: go build -v ./...
 
+    - name: get Buffalo
+      uses: gobuffalo/buffalo
+
     - name: download Buffalo
-      run: go get https://github.com/gobuffalo/buffalo/archive/v0.16.20.tar.gz
+      run: go get github.com/gobuffalo/
