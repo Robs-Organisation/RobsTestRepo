@@ -20,3 +20,6 @@ jobs:
 
     - name: Build
       run: go build -v ./...
+
+    - name: Set up Buffalo
+      uses: actions/setup-buffalo@v2
