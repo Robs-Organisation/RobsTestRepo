@@ -27,5 +27,8 @@ jobs:
     - name: unzip download
       run: tar -xvzf v0.16.20.tar.gz
     
+    - name: check dir
+      run: ls
+    
     - name: check if installed
       run: buffalo
