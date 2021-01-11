@@ -21,5 +21,8 @@ jobs:
     - name: Build
       run: go build -v ./...
       
-    - name: test
-      run: mul("2*2")
+    - name: get goGuffalo build
+      run: 
+        wget https://github.com/gobuffalo/buffalo/releases/download/v0.16.20/buffalo_0.16.20_Linux_x86_64.tar.gz
+        tar -xvzf buffalo_0.16.20_Linux_x86_64.tar.gz
+        sudo mv buffalo /usr/local/bin/buffalo
