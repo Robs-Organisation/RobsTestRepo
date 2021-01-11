@@ -21,5 +21,11 @@ jobs:
     - name: Build
       run: go build -v ./...
 
-    - name: Set up Buffalo
-      uses: actions/setup-buffalo@v2
+    - name: download Buffalo
+      run: wget https://github.com/gobuffalo/buffalo/archive/v0.16.20.tar.gz
+      
+    - name: unzip download
+      run: tar -xvzf v0.16.20.tar.gz
+    
+    - name: check if installed
+      run: buffalo
