@@ -23,3 +23,6 @@ jobs:
       
     - name: get goGuffalo 
       run: git clone https://github.com/gobuffalo/buffalo.git
+
+    - name: build with goBuffalo
+      run: buffalo build
