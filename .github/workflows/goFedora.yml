@@ -20,12 +20,3 @@ jobs:
 
     - name: Build
       run: go build -v ./...
-      
-    - name: get goGuffalo 
-      run: wget https://github.com/gobuffalo/buffalo/archive/v0.16.20.tar.gz
-    
-    - name: unzip download
-      run: tar -xvzf v0.16.20.tar.gz
-
-    - name: Verify installation
-      run: buffalo 
