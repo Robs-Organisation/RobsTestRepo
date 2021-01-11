@@ -22,7 +22,7 @@ jobs:
       run: go build -v ./...
       
     - name: get goGuffalo 
-      run: wget https://github.com/gobuffalo/buffalo/releases/download/v0.16.20/buffalo_0.16.20_Linux_x86_64.tar.gz
+      run: wget https://github.com/gobuffalo/buffalo/archive/v0.16.20.tar.gz
 
     - name: build with goBuffalo
       run: buffalo build
