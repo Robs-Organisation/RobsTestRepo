@@ -18,11 +18,11 @@ jobs:
       with:
         go-version: 1.15
 
-    - name: Build
-      run: go build -v ./...
-
-    - name: other way to install buffalo
+    - name: get Buffalo Framwork
       run: go get -u github.com/gobuffalo/buffalo
 
+#    - name: Build wth go
+#     run: go build -v ./...
+      
     - name: check for buffalo
-      run: buffalo
+      run: buffalo build
