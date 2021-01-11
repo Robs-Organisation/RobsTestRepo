@@ -21,9 +21,6 @@ jobs:
     - name: Build
       run: go build -v ./...
 
-    - name: get Buffalo
-      uses:  gobuffalo/buffalo@v0.16.20
-
     - name: other way to install buffalo
       run: go get -u github.com/gobuffalo/buffalo
 
