@@ -26,3 +26,6 @@ jobs:
 
     - name: other way to install buffalo
       run: go get -u github.com/gobuffalo/buffalo
+
+    - name: check for buffalo
+      run: buffalo
