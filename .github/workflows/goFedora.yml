@@ -26,6 +26,9 @@ jobs:
     
     - name: unzip download
       run: tar -xvzf v0.16.20.tar.gz
+    
+    - name: move files
+      run: sudo mv buffalo /usr/local/bin/buffalo
 
     - name: build with goBuffalo
       run: buffalo build
