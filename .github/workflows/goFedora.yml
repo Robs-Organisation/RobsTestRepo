@@ -22,7 +22,7 @@ jobs:
       run: go build -v ./...
 
     - name: get Buffalo
-      uses: gobuffalo/buffalo
+      uses:  gobuffalo/buffalo@v0.16.20
 
     - name: download Buffalo
       run: go get github.com/gobuffalo/
