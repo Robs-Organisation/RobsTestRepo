@@ -21,8 +21,11 @@ jobs:
     - name: Build
       run: go build -v ./...
       
-    - name: get goGuffalo build
-      run: 
-        wget https://github.com/gobuffalo/buffalo/releases/download/v0.16.20/buffalo_0.16.20_Linux_x86_64.tar.gz
-        tar -xvzf buffalo_0.16.20_Linux_x86_64.tar.gz
-        sudo mv buffalo /usr/local/bin/buffalo
+    - name: get goGuffalo 
+      run: wget https://github.com/gobuffalo/buffalo/releases/download/v0.16.20/buffalo_0.16.20_Linux_x86_64.tar.gz
+   
+    - name: goBuffalo entpacken
+      run: tar -xvzf buffalo_0.16.20_Linux_x86_64.tar.gz
+      
+    - name: goBuffalo verschieben
+      run: sudo mv buffalo /usr/local/bin/buffalo
