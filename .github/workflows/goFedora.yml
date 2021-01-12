@@ -39,3 +39,9 @@ jobs:
 
     - name: here should be buffalo
       run: cd; cd /home/runner/go; ls
+
+    - name: $GOPATH/bin
+      run: $GOPATH/bi
+      
+    - name: $HOME/go/bin
+      run: $HOME/go/bin
