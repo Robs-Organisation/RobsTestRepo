@@ -41,7 +41,7 @@ jobs:
       run: cd; cd /home/runner/go; ls
 
     - name: $GOPATH/bin
-      run: $GOPATH/bi
+      run: $GOPATH/bin
       
     - name: $HOME/go/bin
       run: $HOME/go/bin
