@@ -30,9 +30,6 @@ jobs:
       
     - name: check for go
       run: go build -v ./...
-      
-    - name: check GOPATH
-      run: go env
     
     - name: here should be buffalo /bin
       run: cd; cd /home/runner/go/bin; ls
