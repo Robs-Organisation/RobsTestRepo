@@ -35,4 +35,4 @@ jobs:
       run: go env
     
     - name: here should be buffalo
-      run: cd; cd go/bin;ls
+      run: cd; cd /home/runner/go; ls
