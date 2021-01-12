@@ -22,7 +22,7 @@ jobs:
       run: go get -u github.com/gobuffalo/buffalo/buffalo
       
     - name: what is the current directory 
-      run: cd ..; ls
+      run: pwd
       
     - name: check for buffalo
-      run: cd ~/RobsTestRepo; buffalo build
+      run: buffalo build
