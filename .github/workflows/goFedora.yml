@@ -47,3 +47,10 @@ jobs:
     - name: $HOME/go/bin
       run: cd $HOME/go/bin; ls
       continue-on-error: true
+
+    - name: cd home/
+      run: cd home/
+    
+    - name: cd home/runner/
+      run: cd home/runner/
+    
