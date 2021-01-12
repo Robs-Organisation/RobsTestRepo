@@ -50,10 +50,12 @@ jobs:
 
     - name: cd home/
       run: cd; cd home/; ls
+      continue-on-error: true
     
     - name: cd home/runner/
       run: cd; cd home/runner/; ls
+      continue-on-error: true
     
     - name: cd 
       run: cd; ls
-    
+      continue-on-error: true
