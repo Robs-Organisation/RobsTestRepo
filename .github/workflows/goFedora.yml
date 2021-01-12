@@ -21,15 +21,12 @@ jobs:
     - name: get Buffalo Framwork
       run: go get -u github.com/gobuffalo/buffalo@master
 
-#    - name: Build wth go
-#     run: go build -v ./...
+    - name: check if go works
+      run: go
       
     - name: check for buffalo
       run: buffalo build
       continue-on-error: true
-      
-    - name: check for go
-      run: go build -v ./...
     
     - name: here should be buffalo /bin
       run: cd; cd /home/runner/go/bin; ls
