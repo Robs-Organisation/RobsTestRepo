@@ -19,7 +19,7 @@ jobs:
         go-version: 1.15
 
     - name: get Buffalo Framwork
-      run: go get -u github.com/gobuffalo/buffalo@master
+      run: go get -u -v github.com/gobuffalo/buffalo
 
     - name: check if go works
       run: go
