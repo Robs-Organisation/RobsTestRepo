@@ -41,5 +41,5 @@ jobs:
     - name: $GOPATH content
       run: cd /home/runner/go; ls
     
-    - name: $GOPATH content /bin
-      run: cd /home/runner/go/bin; ls
+    - name: $GOPATH content /pkg
+      run: cd /home/runner/go/pkg; ls
