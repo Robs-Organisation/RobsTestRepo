@@ -20,38 +20,6 @@ jobs:
 
     - name: get Buffalo Framwork
       run: go get -u github.com/gobuffalo/buffalo/buffalo
-
-    - name: check if go works
-      run: go
-      continue-on-error: true
       
     - name: check for buffalo
       run: buffalo build
-      continue-on-error: true
-      
-    - name: cd; ls -R
-      run: cd; ls -R
-
-    - name: cd ./go/pkg/mod/cache/download/github.com
-      run: cd; cd ./go/pkg/mod/cache/download/github.com/gobuffalo; ls
-       
-    - name: cd ./go/pkg/mod/cache/download/github.com/gobuffalo/buffalo
-      run: cd; cd ./go/pkg/mod/cache/download/github.com/gobuffalo/buffalo; ls
-
-    - name: $GOPATH content
-      run: cd /home/runner/go; ls
-    
-    - name: $GOPATH content /pkg
-      run: cd /home/runner/go/pkg; ls
-    
-    - name: go env
-      run: go env
-    
-    - name: echo $PATH
-      run: echo $PATH
-    
-    - name: go get
-      run: go get
-
-    - name: find /home/runner/go/bin
-      run: find /home/runner/go/bin
