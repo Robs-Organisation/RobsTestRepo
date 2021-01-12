@@ -25,4 +25,4 @@ jobs:
       run: pwd
       
     - name: check for buffalo
-      run: buffalo build
+      run: cd /home/runner/work/RobsTestRepo/RobsTestRepo; buffalo build
