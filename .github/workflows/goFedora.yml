@@ -41,9 +41,9 @@ jobs:
       run: cd; cd /home/runner/go; ls
 
     - name: $GOPATH/bin
-      run: cd $GOPATH/bin
+      run: cd $GOPATH/bin; ls
       continue-on-error: true
       
     - name: $HOME/go/bin
-      run: cd $HOME/go/bin
+      run: cd $HOME/go/bin; ls
       continue-on-error: true
