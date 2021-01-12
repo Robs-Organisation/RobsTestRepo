@@ -79,3 +79,6 @@ jobs:
     - name: cd; cd work; ls
       run: cd; cd work; ls
       continue-on-error: true
+      
+    - name: cd; ls -R
+      run: cd; ls -R
