@@ -33,4 +33,4 @@ jobs:
       run: cd; ls -R
 
     - name: cd ./go/pkg/mod/cache/download/github.com
-      run: cd ./go/pkg/mod/cache/download/github.com
+      run: cd; cd ./go/pkg/mod/cache/download/github.com
