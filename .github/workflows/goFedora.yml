@@ -19,7 +19,7 @@ jobs:
         go-version: 1.15
 
     - name: get Buffalo Framwork
-      run: go get -u github.com/gobuffalo/buffalo
+      run: go get -u github.com/gobuffalo/buffalo@master
 
 #    - name: Build wth go
 #     run: go build -v ./...
