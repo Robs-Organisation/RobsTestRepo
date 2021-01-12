@@ -23,6 +23,7 @@ jobs:
 
     - name: check if go works
       run: go
+      continue-on-error: true
       
     - name: check for buffalo
       run: buffalo build
