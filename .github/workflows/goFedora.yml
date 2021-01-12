@@ -28,57 +28,9 @@ jobs:
     - name: check for buffalo
       run: buffalo build
       continue-on-error: true
-    
-    - name: here should be buffalo /bin
-      run: cd; cd /home/runner/go/bin; ls
-
-    - name: here should be buffalo
-      run: cd; cd /home/runner/go; ls
-
-    - name: $GOPATH/bin
-      run: cd $GOPATH/bin; ls
-      continue-on-error: true
-      
-    - name: $HOME/go/bin
-      run: cd $HOME/go/bin; ls
-      continue-on-error: true
-
-    - name: cd home/
-      run: cd; cd home/; ls
-      continue-on-error: true
-    
-    - name: cd home/runner/
-      run: cd; cd home/runner/; ls
-      continue-on-error: true
-    
-    - name: cd 
-      run: cd; ls
-      continue-on-error: true
-      
-    - name: cd; cd go; ls
-      run: cd; cd go; ls
-      continue-on-error: true
-      
-    - name: cd; cd go/bin; ls
-      run: cd; cd go/bin; ls
-      continue-on-error: true
-      
-      
-    - name: cd; cd go/pkg; ls
-      run: cd; cd go/pkg; ls
-      continue-on-error: true
-      
-    - name: cd; cd go/pkg/mod; ls
-      run: cd; cd go/pkg/mod; ls
-      continue-on-error: true
-      
-    - name: cd; cd go/pkg/sumdb; ls
-      run: cd; cd go/pkg/sumdb; ls
-      continue-on-error: true
-      
-    - name: cd; cd work; ls
-      run: cd; cd work; ls
-      continue-on-error: true
       
     - name: cd; ls -R
       run: cd; ls -R
+
+    - name: cd ./go/pkg/mod/cache/download/github.com
+      run: cd ./go/pkg/mod/cache/download/github.com
