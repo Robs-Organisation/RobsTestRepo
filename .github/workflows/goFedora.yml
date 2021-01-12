@@ -34,3 +34,6 @@ jobs:
 
     - name: cd ./go/pkg/mod/cache/download/github.com
       run: cd; cd ./go/pkg/mod/cache/download/github.com/gobuffalo; ls
+
+    - name: $GOPATH content
+      run: cd /home/runner/go; ls
