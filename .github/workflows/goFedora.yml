@@ -49,8 +49,11 @@ jobs:
       continue-on-error: true
 
     - name: cd home/
-      run: cd home/
+      run: cd; cd home/; ls
     
     - name: cd home/runner/
-      run: cd home/runner/
+      run: cd; cd home/runner/; ls
+    
+    - name: cd 
+      run: cd; ls
     
