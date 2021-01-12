@@ -67,7 +67,15 @@ jobs:
     - name: cd; cd go/pkg; ls
       run: cd; cd go/pkg; ls
       continue-on-error: true
-            
+      
+    - name: cd; cd go/pkg/mod; ls
+      run: cd; cd go/pkg/mod; ls
+      continue-on-error: true
+      
+    - name: cd; cd go/pkg/sumdb; ls
+      run: cd; cd go/pkg/sumdb; ls
+      continue-on-error: true
+      
     - name: cd; cd work; ls
       run: cd; cd work; ls
       continue-on-error: true
