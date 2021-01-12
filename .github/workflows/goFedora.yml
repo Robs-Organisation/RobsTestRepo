@@ -25,4 +25,4 @@ jobs:
       run: cd ..; ls
       
     - name: check for buffalo
-      run: buffalo build
+      run: cd /RobsTestRepo; buffalo build
