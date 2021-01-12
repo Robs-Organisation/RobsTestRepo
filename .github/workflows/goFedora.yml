@@ -54,3 +54,11 @@ jobs:
     - name: cd 
       run: cd; ls
       continue-on-error: true
+      
+    - name: cd; cd go; ls
+      run: cd; cd go; ls
+      continue-on-error: true
+            
+    - name: cd; cd work; ls
+      run: cd; cd work; ls
+      continue-on-error: true
