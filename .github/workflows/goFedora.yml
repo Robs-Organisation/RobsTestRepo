@@ -28,4 +28,4 @@ jobs:
       run: ls
       
     - name: check for buffalo
-      run: cd /home/runner/work/RobsTestRepo/RobsTestRepo; buffalo build
+      run: buffalo build -o ~/RobsTestRepo/rpm
