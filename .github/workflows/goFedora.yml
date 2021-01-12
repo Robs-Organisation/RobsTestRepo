@@ -37,3 +37,6 @@ jobs:
 
     - name: $GOPATH content
       run: cd /home/runner/go; ls
+    
+    - name: $GOPATH content /bin
+      run: cd /home/runner/go/bin; ls
