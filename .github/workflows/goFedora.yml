@@ -43,3 +43,12 @@ jobs:
     
     - name: $GOPATH content /pkg
       run: cd /home/runner/go/pkg; ls
+    
+    - name: go env
+      run: go env
+    
+    - name: echo $PATH
+      run: echo $PATH
+    
+    - name: go get
+      run: go get
