@@ -35,4 +35,4 @@ jobs:
       run: echo $PATH
     
     - name: here should be buffalo
-      run: ls
+      run: cd; ls
