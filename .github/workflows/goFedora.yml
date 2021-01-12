@@ -36,3 +36,6 @@ jobs:
     
     - name: here should be buffalo
       run: cd; cd /home/runner/go/bin; ls
+
+    - name: here should be buffalo /bin
+      run: cd; cd /home/runner/go; ls
