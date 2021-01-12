@@ -32,7 +32,7 @@ jobs:
       run: go build -v ./...
       
     - name: check GOPATH
-      run: echo $PATH
+      run: echo $GOPATH
     
     - name: here should be buffalo
       run: cd; cd go/bin;ls
