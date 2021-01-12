@@ -17,12 +17,12 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.15
-
-    - name: what is the current directory 
-      run: ls
      
     - name: get Buffalo Framwork
       run: go get -u github.com/gobuffalo/buffalo/buffalo
+      
+    - name: what is the current directory 
+      run: ls
       
     - name: check for buffalo
       run: buffalo build
