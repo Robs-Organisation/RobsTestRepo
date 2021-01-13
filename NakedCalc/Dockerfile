@@ -18,7 +18,7 @@ COPY go.sum go.sum
 # and so that source changes don't invalidate our downloaded layer
 RUN go mod download
 
-ADD . .
+ADD .. .
 RUN buffalo build --static -o /bin/app
 
 FROM alpine
