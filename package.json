@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "../node_modules/.bin/webpack --watch",
-    "build": "../node_modules/.bin/webpack -p --progress"
+    "dev": "node_modules/.bin/webpack --watch",
+    "build": "node_modules/.bin/webpack -p --progress"
   },
   "repository": "github.com/gobuffalo/buffalo",
   "dependencies": {
