@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: test if python is installed
-        run: python -v
+        run: python --version
         continue-on-error: true
       
       - name: Setup Python
@@ -41,4 +41,4 @@ jobs:
           token: # optional, default is ${{ github.token }}
           
       - name: test if python is installed
-        run: python -v
+        run: python --version
