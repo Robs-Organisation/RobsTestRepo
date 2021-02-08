@@ -37,3 +37,11 @@ jobs:
           
       - name: checkout files downloaded
         run: ls
+
+      - name: Hello World dj test
+        # You may pin to the exact commit or the version.
+        # uses: danrhjones/playingWithGithubActions@4257d88ab57b2415401fbb5a45cddd4d5e78fe96
+        uses: danrhjones/playingWithGithubActions@0.0.1
+        with:
+          # Who to greet
+          who-to-greet: TestPerson
