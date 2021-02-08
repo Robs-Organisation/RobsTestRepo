@@ -26,22 +26,19 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          
-      - name: checkout files downloaded
-        run: ls
-
-      - name: Hello World dj test
-        # You may pin to the exact commit or the version.
-        # uses: danrhjones/playingWithGithubActions@4257d88ab57b2415401fbb5a45cddd4d5e78fe96
-        uses: danrhjones/playingWithGithubActions@0.0.1
+      - name: test if python is installed
+        run: python -v
+        continue-on-error: true
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.1
         with:
-          # Who to greet
-          who-to-greet: TestPerson
+          # Version range or exact version of a Python version to use, using SemVer's version range syntax.
+          python-version: # optional, default is 3.x
+          # The target architecture (x86, x64) of the Python interpreter.
+          architecture: # optional
+          # Used to pull python distributions from actions/python-versions. Since there's a default, this is typically not supplied by the user.
+          token: # optional, default is ${{ github.token }}
+          
+      - name: test if python is installed
+        run: python -v
