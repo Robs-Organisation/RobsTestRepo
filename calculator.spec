@@ -19,7 +19,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/%{name}
 
 %install
 install -d $RPM_BUILD_ROOT/opt/calculator
-install /home/runner/work/RobsTestRepo/RobsTestRepo/CalcBuffaloBinary $RPM_BUILD_ROOT/opt/calculator/CalcBuffaloBinary
+install /github/home/rpmbuild/SOURCES/calculator-1.0/CalcBuffaloBinary $RPM_BUILD_ROOT/opt/calculator/CalcBuffaloBinary
 
 %clean
 rm -rf $RPM_BUILD_ROOT
