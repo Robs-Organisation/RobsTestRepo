@@ -16,7 +16,7 @@ This is a test to build an RPM with my calculator.
 %setup -q
 
 %install
-install -m 0755 %{name} %{buildroot}/%{_bindir}/%{name}
+install -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
