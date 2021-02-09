@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        Calculaor with Buffalo
 
 License:        All rights reserved
-Source0:        calculator-1.0.tar.gz
+Source0:        CalcBuffaloBinary-1.0.tar.gz
 
 Requires:       postgresql
 
@@ -12,17 +12,20 @@ Requires:       postgresql
 This is a test to build an RPM with my calculator.
 
 %prep
+mkdir -p %{buildroot}%{_bindir}
+mkdir -p %{buildroot}%{_sysconfdir}/%{name}
 
-%setup -q
+%setup -c
 
 %install
-install -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
+install -d $RPM_BUILD_ROOT/opt/calculator
+install home/runner/work/RobsTestRepo/RobsTestRepo/rpmbuild/sourceCode/CalcBuffaloBinary $RPM_BUILD_ROOT/opt/calculator/CalcBuffaloBinary
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-/CalcBuffaloBinary
+/opt/calculator/CalcBuffaloBinary
 
 %changelog
