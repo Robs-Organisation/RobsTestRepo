@@ -12,20 +12,17 @@ Requires:       postgresql
 This is a test to build an RPM with my calculator.
 
 %prep
-mkdir -p %{buildroot}%{_bindir}
-mkdir -p %{buildroot}%{_sysconfdir}/%{name}
 
-%setup -c
+%setup -q
 
 %install
-install -d $RPM_BUILD_ROOT/opt/calculator
-install /home/runner/work/RobsTestRepo/RobsTestRepo/CalcBuffaloBinary $RPM_BUILD_ROOT/opt/calculator/CalcBuffaloBinary
+install -m 0755 %{name} %{buildroot}/%{_bindir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-/opt/calculator/CalcBuffaloBinary
+/CalcBuffaloBinary
 
 %changelog
